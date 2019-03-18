@@ -6,11 +6,11 @@
 /*   By: cdenys-a <cdenys-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/23 13:28:56 by cdenys-a          #+#    #+#             */
-/*   Updated: 2018/11/23 17:50:50 by cdenys-a         ###   ########.fr       */
+/*   Updated: 2018/12/01 14:50:42 by cdenys-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_libft.h>
+#include <libft.h>
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

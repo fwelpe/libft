@@ -6,11 +6,11 @@
 /*   By: cdenys-a <cdenys-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/21 15:39:35 by cdenys-a          #+#    #+#             */
-/*   Updated: 2018/11/23 18:13:29 by cdenys-a         ###   ########.fr       */
+/*   Updated: 2018/12/01 14:49:29 by cdenys-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_libft.h>
+#include <libft.h>
 
 void	ft_bzero(void *s, size_t n)
 {

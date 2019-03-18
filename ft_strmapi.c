@@ -6,37 +6,35 @@
 /*   By: cdenys-a <cdenys-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/27 23:47:09 by cdenys-a          #+#    #+#             */
-/*   Updated: 2018/11/28 00:35:33 by cdenys-a         ###   ########.fr       */
+/*   Updated: 2018/12/05 22:29:28 by cdenys-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_libft.h>
+#include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;
 	unsigned int	j;
-	char			*pre_rt;
-	char			cell;
+	unsigned int	full_l;
 	char			*rt;
+	char			cell;
 
 	if (!s || !f)
 		return (NULL);
 	i = 0;
 	j = 0;
-	pre_rt = malloc(ft_strlen(s) + 1);
-	if (!pre_rt)
+	full_l = ft_strlen(s) + 1;
+	rt = (char *)malloc(full_l);
+	if (!rt)
 		return (NULL);
 	while (s[i])
 	{
-		if (cell = f(i, s[i]))
-			pre_rt[j++] = cell;
+		if ((cell = f(i, s[i])))
+			rt[j++] = cell;
 		i++;
 	}
-	pre_rt[j] = '\0';
-	rt = ft_strdup(pre_rt);
-	free(pre_rt);
-	if (!rt)
-		return (NULL);
+	while (j < full_l)
+		rt[j++] = '\0';
 	return (rt);
 }

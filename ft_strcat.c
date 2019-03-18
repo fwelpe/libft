@@ -6,11 +6,11 @@
 /*   By: cdenys-a <cdenys-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/24 16:42:37 by cdenys-a          #+#    #+#             */
-/*   Updated: 2018/11/24 17:12:50 by cdenys-a         ###   ########.fr       */
+/*   Updated: 2018/12/01 14:51:24 by cdenys-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_libft.h>
+#include <libft.h>
 
 char	*ft_strcat(char *s1, const char *s2)
 {

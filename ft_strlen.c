@@ -6,18 +6,18 @@
 /*   By: cdenys-a <cdenys-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/23 17:28:49 by cdenys-a          #+#    #+#             */
-/*   Updated: 2018/11/23 17:50:59 by cdenys-a         ###   ########.fr       */
+/*   Updated: 2018/12/04 20:47:42 by cdenys-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_libft.h>
+#include <libft.h>
 
 size_t	ft_strlen(const char *s)
 {
 	size_t	i;
 
 	i = 0;
-	while (s[i] != '\0')
+	while (s[i])
 		i++;
 	return (i);
 }

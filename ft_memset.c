@@ -6,11 +6,11 @@
 /*   By: cdenys-a <cdenys-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/21 15:36:06 by cdenys-a          #+#    #+#             */
-/*   Updated: 2018/11/23 17:50:54 by cdenys-a         ###   ########.fr       */
+/*   Updated: 2018/12/01 14:50:45 by cdenys-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_libft.h>
+#include <libft.h>
 
 void	*ft_memset(void *b, int c, size_t len)
 {

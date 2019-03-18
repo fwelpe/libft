@@ -6,11 +6,11 @@
 /*   By: cdenys-a <cdenys-a@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/27 23:09:08 by cdenys-a          #+#    #+#             */
-/*   Updated: 2018/11/28 00:30:20 by cdenys-a         ###   ########.fr       */
+/*   Updated: 2018/12/01 14:52:17 by cdenys-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ft_libft.h>
+#include <libft.h>
 
 char	*ft_strmap(char const *s, char (*f)(char))
 {
@@ -20,7 +20,7 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	if (!s || !f)
 		return (NULL);
 	l = ft_strlen(s);
-	rt = malloc(l + 1);
+	rt = (char *)malloc(l + 1);
 	if (!rt)
 		return (NULL);
 	rt[l] = '\0';
